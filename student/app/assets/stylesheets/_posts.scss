@@ -2,13 +2,16 @@
   .card {
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid #181818;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius:20px;
+    border: 1px solid #D8D8D8;
     height: 400px;
     margin-bottom: 20px;
     .card-topper {
     
       height: 200px;
       width: 100%;
+      border-top-left-radius:20px;
       background-size: cover;
       background-position: center;
     

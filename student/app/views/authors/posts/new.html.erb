@@ -4,4 +4,7 @@
 
 <%= render 'form', post: @post, url:authors_posts_url %>
 
-<%= link_to 'Back', authors_posts_path %>
+
+<p class="text-muted">
+	<%= link_to 'Back', authors_posts_path, class: 'btn btn-sm btn-info' %> If you want see the source of body, you have to click in <em>Tools</em> and <em>Source Code.</em>
+</p>
