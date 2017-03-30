@@ -49,6 +49,22 @@
     }
   }
 }
+.posts.edit, .posts.new{
+  .card{
+    .card-block{
+    background-color: $light-gray;
+    }
+    .list-group-item{
+      input[type='text'], textarea{
+      font-size:14px;
+      background-color: $light-gray;
+      &:last-child{
+      background-color: $light-gray;
+      }
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 34em) {
   .posts.index .card {

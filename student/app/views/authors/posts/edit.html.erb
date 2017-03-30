@@ -1,10 +1,4 @@
 <% provide(:page_title, "Edit #{@post.title}") %>
 <% provide(:author, 'active') %>
-<h1>Editing Post</h1>
 
 <%= render 'form', post: @post, url:authors_post_url(@post) %>
-<div class="btn-group" role="group" aria-label="...">
-	<%= link_to 'Show', @post, class: "btn btn-primary" %> 
-	<%= link_to 'Back', authors_posts_path, class: "btn btn-info" %>
-</div>
-<p class="text-muted">If you want see the source of body, you have to click in <em>Tools</em> and <em>Source Code.</em></p>
