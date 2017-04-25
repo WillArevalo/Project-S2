@@ -12,8 +12,8 @@
   <body>
     <%= render 'layouts/navbar' %>
     <% if notice || alert %>
-  	 <p class="notice"><%= notice %></p>
-     <p class="alert"><%= alert %></p>
+    	 <p class="notice text-muted text-lg-center text-md-center text-sm-center text-sm-center text-xs-center"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
     <%end%>
     <div class="container <%= controller_name %> <%= action_name %>">
     	<%= yield %>
