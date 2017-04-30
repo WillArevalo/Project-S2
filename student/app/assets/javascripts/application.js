@@ -20,7 +20,7 @@ document.addEventListener("turbolinks:load", function(){
 	tinymce.remove();
 	tinymce.init({
 		  selector: 'textarea#post_body',
-  		height: 500,
+  		height: 550,
   		plugins: [
         "advlist autolink lists link image charmap print preview anchor",
         "searchreplace visualblocks code fullscreen",

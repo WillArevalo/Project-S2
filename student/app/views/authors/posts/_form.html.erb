@@ -14,7 +14,7 @@
     <div class=col-md-3>
     <br>
       <div class="card">
-        <div class="card-block">
+        <div class="card-block" >
           <%if @post.new_record? %> 
             <h4 class="card-title">New Post</h4>
           <%else%>
@@ -40,7 +40,13 @@
           <li class="list-group-item">
             <div class="field">
               <%= f.label :description, class: "control-label" %>
-              <%= f.text_area :description, class: "form-control", style: "height: 200px;", placeholder: "A bit of all" %>
+              <%= f.text_area :description, class: "form-control areas", placeholder: "A bit of all" %>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="field">
+              <%= f.label 'Tags', class: "control-label" %>
+              <%= f.text_area :tag_list, class: "form-control areas",  placeholder: "Example. cool, smart, sexy, ..." %>
             </div>
           </li>
         </ul>
@@ -53,7 +59,7 @@
       </div>
     </div>
     <div class=col-md-3>
-      <div class="actions" style="position:relative; bottom: 50px;">
+      <div class="actions" id="save">
         <%= f.submit "Save Blog Post", class: "btn btn-lg btn-success btn-block" %>
       </div>
     </div>
