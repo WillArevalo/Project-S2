@@ -11,10 +11,11 @@
 // about supported directives.
 //
 //= require jquery
-//= require_bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .
+
 
 document.addEventListener("turbolinks:load", function(){
 	tinymce.remove();
